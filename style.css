@@ -171,12 +171,11 @@ section.hero {
 
     .hero-left {
         width: 100%;
-
     }
 
     .hero-right img {
-        height: 350px;
-        width: 350px;
-        margin: 0;
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
     }
 }
