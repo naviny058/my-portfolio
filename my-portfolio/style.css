@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ham {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+nav h2 {
+    color: red;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1rem;
+    font-weight: 600;
+}
+
+nav ul li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.sec {
+    background-color: #ffdada;
+}
+
+section.hero {
+    background-color: #ffdada;
+    display: flex;
+    height: calc(100vh - 100px);
+    width: 100%;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.hero-left {
+    width: 45%;
+    margin: auto 0;
+}
+
+.hero-left h5 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 100;
+    color: grey;
+}
+
+.hero-left h1 {
+    margin-bottom: 1.3rem;
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+
+.hero-left h1 span {
+    font-weight: 700;
+}
+
+.hero-left h6 {
+    margin-bottom: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: rgb(78, 75, 75);
+}
+
+.hero-right img {
+    height: 420px;
+    width: 420px;
+    border-radius: 50%;
+    object-position: center;
+    margin-top: 8rem;
+    margin-right: 5rem;
+}
+
+.btn {
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid red;
+    outline: none;
+    font-weight: 600;
+    transition: all ease 0.2s;
+}
+
+#hire {
+    background-color: red;
+    color: white;
+    margin-right: 0.5rem;
+}
+
+#portfolio {
+    background-color: white;
+    color: red;
+}
+
+#portfolio:hover {
+    color: white;
+    background-color: red;
+}
+
+@media (max-width:881px) {
+    nav ul {
+        position: absolute;
+        height: calc(100vh - 100px);
+        width: 100%;
+        background-color: #ffdada;
+        top: 100px;
+        transform: translateX(-120%);
+        transition: all ease 0.5s;
+    }
+
+    nav ul {
+        display: inline;
+    }
+
+    nav ul li {
+        margin: 80px 190px;
+        font-size: 2rem;
+    }
+
+    nav ul li:hover {
+        color: red;
+    }
+
+    .ham {
+        display: block;
+        position: relative;
+        cursor: pointer;
+    }
+
+    #hamberger-open {
+        font-size: 35px;
+    }
+
+    #hamberger-close {
+        display: none;
+        font-size: 35px;
+    }
+
+    section.hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-left {
+        width: 100%;
+    }
+
+    .hero-right img {
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+    }
+}
